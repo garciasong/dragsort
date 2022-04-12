@@ -1,13 +1,13 @@
-﻿<?php
-	if ($_POST) {
-		$ids = $_POST["ids"];
-		for ($idx = 0; $idx < count($ids); $idx+=1) {
-			$id = $ids[$idx];
-			$ordinal = $idx;
-			//...
-		}
-		return;
-	}
+<?php
+    if ($_POST) {
+        $ids = $_POST["ids"];
+        for ($idx = 0; $idx < count($ids); $idx+=1) {
+            $id = $ids[$idx];
+            $ordinal = $idx;
+            //...
+        }
+        return;
+    }
 ?>
 <!DOCTYPE html>
 
@@ -38,13 +38,13 @@
         
         <ul id="gallery">
 			<?php
-				$list = array("blue", "orange", "brown", "red", "yellow", "green", "black", "white", "purple");
-				for ($idx = 0; $idx < count($list); $idx+=1) {
-					echo "<li data-itemid='" . $idx . "'>";
-					echo "<div>" . $list[$idx] . "</div>";
-					echo "</li>";
-				}
-			?>
+                $list = array("blue", "orange", "brown", "red", "yellow", "green", "black", "white", "purple");
+                for ($idx = 0; $idx < count($list); $idx+=1) {
+                    echo "<li data-itemid='" . $idx . "'>";
+                    echo "<div>" . $list[$idx] . "</div>";
+                    echo "</li>";
+                }
+            ?>
 		</ul>
 		
 		<script type="text/javascript" src="..\..\jquery.dragsort.js"></script>
